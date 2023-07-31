@@ -2,60 +2,55 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class animate : MonoBehaviour
+public class Animate : MonoBehaviour
 {
-    Animator animator;
-    Transform currentPosition;
-    public bool walking;
-    float speed = 0.1f;
-    bool died;
+    [SerializeField] private Animator _animator;
+    private Transform _currentPosition;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        animator = GetComponent<Animator>();
-    }
+    private bool _died;   
+    private bool _walking;
 
-    // Update is called once per frame
-    void Update()
+    private const float _speed = 0.1f;
+
+    private void Update()
     {
         Walk();
     }
 
-    void Walk()
+    private void Walk()
     {
-        if (walking)
+        if (_walking)
         {   
-            transform.Translate(new Vector3(5, 0, 0) * Time.deltaTime * speed);
-            animator.SetBool("IsWalking", true);
+            transform.Translate(new Vector3(5, 0, 0) * Time.deltaTime * _speed);
+            _animator.SetBool("IsWalking", true);
         }
-        else { animator.SetBool("IsWalking", false); }
+        else { _animator.SetBool("IsWalking", false); }
         
     }
 
     public void OnCLickWalk()
     {
-        if(walking == false && died != true)
+        if(_walking == false && _died != true)
         {
-            walking = true;
+            _walking = true;
         }
         else
         {
-            walking = false;
+            _walking = false;
         }
     }
 
     public void OnClickDie()
     {
-        died = true;
-        walking = false;
-        animator.SetTrigger("Died");
+        _died = true;
+        _walking = false;
+        _animator.SetTrigger("Died");
     }
 
     public void OnAttack()
     {
-        walking = false;
-        animator.SetTrigger("Attacked");
+        _walking = false;
+        _animator.SetTrigger("Attacked");
     }
 
 
