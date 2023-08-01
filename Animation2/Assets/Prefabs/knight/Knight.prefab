@@ -96,6 +96,7 @@ GameObject:
   - component: {fileID: 7146833560867809330}
   - component: {fileID: 7146833560867809333}
   - component: {fileID: 7146833560867809328}
+  - component: {fileID: 7485852158491788186}
   m_Layer: 0
   m_Name: Knight
   m_TagString: Untagged
@@ -204,3 +205,47 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _animator: {fileID: 7146833560867809333}
+--- !u!114 &7485852158491788186
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7146833560867809332}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e5c3cdcfee99983438efa45c3a92fe6f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _isMoving: 0
+  _died: 0
+  _startWalking:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 7146833560867809328}
+        m_TargetAssemblyTypeName: Animate, Assembly-CSharp
+        m_MethodName: OnCLickAnimationWalk
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  _death:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 7146833560867809328}
+        m_TargetAssemblyTypeName: Animate, Assembly-CSharp
+        m_MethodName: OnClickAnimationDie
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2

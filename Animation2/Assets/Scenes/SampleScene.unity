@@ -145,6 +145,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df19807ae0038304f8d2ae5063886880, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &147564685 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6635817994131594331, guid: 90ec083f7541d9c408dfaf9dd7817007, type: 3}
+  m_PrefabInstance: {fileID: 1888724981549156295}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e5c3cdcfee99983438efa45c3a92fe6f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &311170006 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 7146833560867809328, guid: 48458914b64896d4593b7b5e819d3a04, type: 3}
@@ -241,8 +252,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1983475}
-        m_TargetAssemblyTypeName: animate, Assembly-CSharp
-        m_MethodName: OnAttack
+        m_TargetAssemblyTypeName: Animate, Assembly-CSharp
+        m_MethodName: OnAttackAnimation
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -253,8 +264,8 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 311170006}
-        m_TargetAssemblyTypeName: animate, Assembly-CSharp
-        m_MethodName: OnAttack
+        m_TargetAssemblyTypeName: Animate, Assembly-CSharp
+        m_MethodName: OnAttackAnimation
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -265,8 +276,8 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 597629700}
-        m_TargetAssemblyTypeName: animate, Assembly-CSharp
-        m_MethodName: OnAttack
+        m_TargetAssemblyTypeName: Animate, Assembly-CSharp
+        m_MethodName: OnAttackAnimation
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -277,8 +288,8 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 8369741}
-        m_TargetAssemblyTypeName: animate, Assembly-CSharp
-        m_MethodName: OnAttack
+        m_TargetAssemblyTypeName: Animate, Assembly-CSharp
+        m_MethodName: OnAttackAnimation
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -505,9 +516,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1983475}
-        m_TargetAssemblyTypeName: animate, Assembly-CSharp
-        m_MethodName: OnClickDie
+      - m_Target: {fileID: 1709044132}
+        m_TargetAssemblyTypeName: Movement, Assembly-CSharp
+        m_MethodName: SomeoneDied
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -517,9 +528,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 311170006}
-        m_TargetAssemblyTypeName: animate, Assembly-CSharp
-        m_MethodName: OnClickDie
+      - m_Target: {fileID: 1419668626}
+        m_TargetAssemblyTypeName: Movement, Assembly-CSharp
+        m_MethodName: SomeoneDied
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -529,9 +540,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 597629700}
-        m_TargetAssemblyTypeName: animate, Assembly-CSharp
-        m_MethodName: OnClickDie
+      - m_Target: {fileID: 2032422009}
+        m_TargetAssemblyTypeName: Movement, Assembly-CSharp
+        m_MethodName: SomeoneDied
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -541,9 +552,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 8369741}
-        m_TargetAssemblyTypeName: animate, Assembly-CSharp
-        m_MethodName: OnClickDie
+      - m_Target: {fileID: 147564685}
+        m_TargetAssemblyTypeName: Movement, Assembly-CSharp
+        m_MethodName: SomeoneDied
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -591,6 +602,17 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 650543585}
   m_CullTransparentMesh: 1
+--- !u!114 &1419668626 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7485852158491788186, guid: 48458914b64896d4593b7b5e819d3a04, type: 3}
+  m_PrefabInstance: {fileID: 7146833560640535526}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e5c3cdcfee99983438efa45c3a92fe6f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1545027328
 GameObject:
   m_ObjectHideFlags: 0
@@ -675,9 +697,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1983475}
-        m_TargetAssemblyTypeName: animate, Assembly-CSharp
-        m_MethodName: OnCLickWalk
+      - m_Target: {fileID: 1709044132}
+        m_TargetAssemblyTypeName: Movement, Assembly-CSharp
+        m_MethodName: BeginEndMovement
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -687,9 +709,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 311170006}
-        m_TargetAssemblyTypeName: animate, Assembly-CSharp
-        m_MethodName: OnCLickWalk
+      - m_Target: {fileID: 1419668626}
+        m_TargetAssemblyTypeName: Movement, Assembly-CSharp
+        m_MethodName: BeginEndMovement
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -699,9 +721,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 597629700}
-        m_TargetAssemblyTypeName: animate, Assembly-CSharp
-        m_MethodName: OnCLickWalk
+      - m_Target: {fileID: 2032422009}
+        m_TargetAssemblyTypeName: Movement, Assembly-CSharp
+        m_MethodName: BeginEndMovement
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -711,9 +733,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 8369741}
-        m_TargetAssemblyTypeName: animate, Assembly-CSharp
-        m_MethodName: OnCLickWalk
+      - m_Target: {fileID: 147564685}
+        m_TargetAssemblyTypeName: Movement, Assembly-CSharp
+        m_MethodName: BeginEndMovement
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1098,6 +1120,17 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1702369954}
   m_CullTransparentMesh: 1
+--- !u!114 &1709044132 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3445801426871767541, guid: 1b4f91750ffca8c4d91d27b7b5fbed1f, type: 3}
+  m_PrefabInstance: {fileID: 7102786273775319332}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e5c3cdcfee99983438efa45c3a92fe6f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1999983960
 GameObject:
   m_ObjectHideFlags: 0
@@ -1317,6 +1350,17 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2032422009 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 9164279845888608599, guid: 3731c5120d9751d4391178e471983617, type: 3}
+  m_PrefabInstance: {fileID: 2674834661565115595}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e5c3cdcfee99983438efa45c3a92fe6f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2130536002
 GameObject:
   m_ObjectHideFlags: 0
